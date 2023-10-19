@@ -1,0 +1,333 @@
+:root{
+  --color-letra:rgb(255, 255, 255);
+  --letra-principal: monserrat;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.conteiner{ 
+  margin: 0 auto;
+  position: relative;
+  display:flexbox;
+   
+}
+.cont-nav {
+  display: flex;
+  align-items: center;
+  letter-spacing: 40px;
+  height: 100px;
+  position: relative;
+  color: rgb(0, 0, 0);
+}
+
+
+#menu {
+  display: flex;
+  margin-left: auto;
+  margin-right: 15%;
+}
+
+.text-nav {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+  position: relative;
+}
+
+#logo {
+  margin-left: 20%;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 20px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+#logo:visited{
+  color: black;
+  text-decoration: none;
+}
+#logo:hover{
+  filter: drop-shadow(8px 8px 4px rgb(114, 113, 113));
+  border-radius: 5px;
+}
+
+
+#menu{
+  
+  display:flex;
+  align-self: center;
+}
+/*Quitar el color despues de Clic*/
+.text-nav:visited{
+  color: rgb(0, 0, 0);
+}
+.text-nav::after{
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 98%;
+  height: 1px;
+  background-color:  rgb(0, 0, 0);
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.4s ease-out;
+}
+.text-nav:hover::after{
+  transform-origin: bottom right left;
+  transform:scaleX(1);
+}
+
+
+.text-nav:hover{
+  transition-property: border;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+/*Nombre Retrato*/
+  #text-retrato{
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+  }
+ 
+  #text-retrato p{
+    height: 100%;
+    font-size: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 25px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+  }
+
+/*El contenedor con las fotos*/
+.contenido {
+  margin: 0 auto;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(4, minmax(200px, 1fr)); 
+  grid-gap: 20px;
+  height: 100%;
+  position: relative;
+  justify-content: center; 
+   object-fit:cover;
+}
+/*Las fotos*/
+.contenido img {
+  width: 100%; 
+  min-height:400px;
+  max-width: 450px; 
+  display: flex;
+  position: relative;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+img{
+  height: 100%;
+  object-fit: cover;
+}
+
+.componenteFoto {
+  margin: 20px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  cursor: pointer; 
+  }
+  
+  
+  .componenteHover {
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+  font-family: 'Roboto', sans-serif;
+  }
+
+
+  .componenteHover p{
+    color: rgb(255, 255, 255);
+    position: relative;
+    height: 100%;
+    margin-top: 100%;
+    letter-spacing: 10px;
+  }
+
+  /*desenfoque de la imagen y enfocar letras*/
+  .componenteFoto:hover .portadaFoto:nth-child(n){
+    filter: brightness(58%);
+    transition: 0.3s linear;
+  }
+
+
+    /*hover y sombras de las fotos*/
+    .componenteFoto:hover {
+      filter: drop-shadow(8px 8px 4px rgb(114, 113, 113));
+      border-radius: 5px;
+    }
+    
+    /*Para que aparezca el texto*/
+    .componenteHover:hover {
+      opacity: 1;
+      filter: drop-shadow(8px 8px 4px rgb(0, 0, 0));
+      border-radius: 5px;
+      }
+
+@media (max-width: 800px) { 
+}
+
+.menuppal{
+  display: none;
+}
+/*Movil*/
+
+@media only screen and (min-width:408px) and (max-width:1258px) {
+  .componenteHover{
+    font-size: 1rem;
+    
+  }
+  .contenido {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  #menu{
+    display: none;
+    margin-left: 25px;
+  }
+  .menuppal{
+    display: block;
+  }
+  .componenteFoto .portadaFoto:nth-child(n){
+    filter: brightness(58%);
+    transition: 0.3s linear;
+  }
+  .componenteHover{
+    opacity: 1;
+  }
+  
+  
+  
+.hamburger{
+	position:fixed;
+  background-color:transparent;
+	right:0;
+	top:0;
+	height:30px;
+	width:30px;
+	padding:20px 20px;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:-webkit-transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:transform 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	z-index:1002;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none
+}
+.hamburger.is-active{
+  background-color:none;
+}
+._layer{
+	background:#333333;
+	margin-bottom:4px;
+	border-radius:2px;
+	width:28px;
+	height:4px;
+	opacity:1;
+	-webkit-transform:translate3d(0, 0, 0);
+	transform:translate3d(0, 0, 0);
+	-webkit-transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+	transition:all 0.25s cubic-bezier(0.05, 1.04, 0.72, 0.98);
+}
+.hamburger:hover .-top{
+	-webkit-transform:translateY(-100%);
+	-ms-transform:translateY(-100%);
+	transform:translateY(-100%);
+}
+.hamburger:hover .-bottom{
+	-webkit-transform:translateY(100%);
+	-ms-transform:translateY(100%);
+	transform:translateY(100%);
+	}
+.hamburger.is-active .-top{
+	-webkit-transform:translateY(200%) rotate(45deg) !important;
+	-ms-transform:translateY(200%) rotate(45deg) !important;
+	transform:translateY(200%) rotate(45deg) !important;
+}
+.hamburger.is-active .-mid{
+	opacity:0;
+}
+.hamburger.is-active .-bottom{
+	-webkit-transform:translateY(-200%) rotate(135deg) !important;
+	-ms-transform:translateY(-200%) rotate(135deg) !important;
+	transform:translateY(-200%) rotate(135deg) !important;
+}
+
+.menuppal.is_active{
+  transform: translate3d(0px, 0px, 0px);
+}
+.menuppal{
+   background-color: rgba(255, 255, 255, 0.95);
+    bottom: 0;
+    height: 30%;
+    width: 30%;
+    left: 0;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    transform: translate3d(0px, -100%, 0px);
+    transition: transform 0.35s cubic-bezier(0.05, 1.04, 0.72, 0.98) 0s;
+    width: 100%;
+    z-index: 1001;
+}
+.menuppal ul{
+  margin:0;padding:0;
+}
+.menuppal ul li { 
+  list-style: none;
+	text-align:center;
+	font-family: Verdadna, Arial, Helvetica;
+	color:nav-color-text;
+	font-size:1.5rem;
+	line-height:3em;
+	height:3em;
+  color:rgb(0, 0, 0);
+	text-transform:none;
+	font-weight:bold;
+}
+.menuppal ul li a{
+  text-decoration:none;
+  color:rgb(0, 0, 0);
+}
+.menuppal ul li a:hover{
+  text-decoration:none;
+  color:#000000;
+}
+  
+ }
