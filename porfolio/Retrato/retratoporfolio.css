@@ -31,6 +31,8 @@ body{
   margin-right: 15%;
 }
 
+
+
 .text-nav {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 5px;
@@ -63,6 +65,52 @@ body{
   
   display:flex;
   align-self: center;
+}
+/* Aqui ira lo de javaScript*/
+
+.componenteFoto {
+  cursor: pointer;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 98, 98, 0.7);
+  text-align: center;
+}
+
+.overlay-image {
+  max-height: 90%;
+  max-width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  color: #ffffff;
+  cursor: pointer;
+}
+/* Estilo para los botones "anterior" y "siguiente" en el overlay */
+.prev, .next {
+  font-size: 30px; /* Tamaño de fuente */
+  color: #fff; /* Color del icono (flecha) */
+  background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del botón */
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%);
+  padding: 10px 20px; /* Espaciado interno */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+  z-index: 1; /* Se superpone al contenido */
 }
 
 
@@ -291,7 +339,7 @@ img{
     transform: translate3d(0px, 0px, 0px);
   }
   .menuppal{
-     background-color: rgba(255, 255, 255, 0.95);
+     background-color: rgba(255, 246, 246, 0.95);
       bottom: 0;
       height: 30%;
       width: 30%;
@@ -330,3 +378,62 @@ img{
     
    }
   
+
+   /*Para Cuando hagas clic en la foto para movil*/
+  
+ /*Boton de cierre*/
+   .close {
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    font-size: 40px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  .prev {
+    left: 10px; /* Posición "anterior" a la izquierda */
+ 
+  }
+  
+  .next {
+    right: 10px; /* Posición "siguiente" a la derecha */
+    border-radius: 0 50% 50% 0; /* Estilo de botón redondeado */
+  }
+ 
+  /* Estilo para los botones "anterior" y "siguiente" en el overlay */
+  .prev, .next {
+    font-size: 40px; /* Tamaño de fuente */
+    color: #fff; /* Color del icono (flecha) */
+    position: absolute;
+    background-color: transparent;
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%);
+    padding: 10px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    z-index: 1; /* Se superpone al contenido */
+  }
+  .prev:hover, .next:hover {
+    background-color: transparent;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(66, 65, 65, 0.7);
+    text-align: center;
+  }
+  
+  .overlay-image {
+    max-height: 80%;
+    max-width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

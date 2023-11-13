@@ -7,13 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>    <script src="https://kit.fontawesome.com/280efe33b1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="retratoporfolio.css" />
-   
     <title>Retrait</title>
 </head>
 <body>
+   
     <header>   
     <div class="conteiner" > 
         <div class="cont-nav" >
@@ -98,7 +99,13 @@
         <img class="portadaFoto"  src="/imagenes/Retratos/mg-0277-2.jfif" alt="" >
         <div class="componenteHover"> </div> 
     </div>
-
+    <div class="overlay">
+        <span class="close" id="close-button">&times;</span>
+        <img class="overlay-image" src="" alt="Imagen en pantalla completa">
+        <span class="prev" id="prev-button">&#8249;</span> 
+        <span class="next" id="next-button">&#8250;</span> 
+    </div>
+    
     </div>
     <script src="retrato.js"></script>
 </body>
