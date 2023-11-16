@@ -116,7 +116,7 @@
   }
   
   .header-container {
-    background-image: url("../imagenes/prueba.jpg");
+    background-image: url("../imagenes/_MG_9197.jpg");
     height: 80%;
     background-size:cover ;
     background-attachment: fixed;
@@ -135,8 +135,8 @@
     background-attachment: fixed;
   }
   .footer-container2{
-    background-image: url("../imagenes/132A9444.jpg");
-    filter: blur(10px);
+    background-image: url("../imagenes/132A2450.jpg");
+    filter: blur(px);
     height: 80%;
     background-size: cover;
     position: relative;
@@ -144,24 +144,24 @@
    
   }
  p[data-foo]{
-  background: rgb(97, 97, 97);
-  background: linear-gradient(90deg, rgba(94,94,94,1) 11%, rgb(137, 137, 145) 43%, rgb(190, 192, 192) 93%);
+
   color: white;
   opacity: 0.5;
   border-radius:5% ;
   position: absolute;
-  font-size: 40px;
+  font-size: 50px;
   bottom: -175%;
   left: 35%;
-  padding: 40px;
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: Verdadna, Arial, Helvetica;
+  transition-duration: 2s;
    }
 
    p[data-foo]:hover{
-    opacity: .8;
+    opacity: 1;
     transition: 0.5s;
+    transition-duration: 1s;
    }
  
  
@@ -217,8 +217,8 @@
     }
     
     .header-container {
-      background-image: url("../imagenes/prueba2.jpg");
-      height: 50%;
+      background-image: url("../imagenes/foto1.jpg");
+      height: 60%;
       background-size: scale-down;
       background-attachment: fixed;
     }
@@ -237,20 +237,18 @@
       background-attachment: fixed;
     }
     .footer-container2{
-      background-image: url("../imagenes/foto3.jpg");
-      filter: blur(10px);
+      background-image: url("../imagenes/132A2450.jpg");
+      filter: blur(3px);
       height: 50%;
       background-size: scale-down;
       position: relative;
       background-attachment: fixed;
     }
     p[data-foo]{
-    background-color: rgba(0, 0, 0, 0.4); 
     color: white;
-    border: 2px solid #ffffff;
     position: absolute;
     font-size: 40px;
-    bottom: -80%;
+    bottom: -90%;
     left: 15%;
     width: 50%;
     padding: 40px;
