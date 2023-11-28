@@ -116,7 +116,7 @@
   }
   
   .header-container {
-    background-image: url("../imagenes/_MG_9197.jpg");
+    background-image: url("../imagenes/132A4609-2.jpg");
     height: 80%;
     background-size:cover ;
     background-attachment: fixed;
@@ -129,13 +129,13 @@
   
   }
   .footer-container {
-    background-image: url("../imagenes/15.jfif");
+    background-image: url("../imagenes/_MG_9197.jpg");
     height: 80%;
     background-size: cover;
     background-attachment: fixed;
   }
   .footer-container2{
-    background-image: url("../imagenes/132A2450.jpg");
+    background-image: url("../imagenes/132A2533.jpg");
     filter: blur(px);
     height: 80%;
     background-size: cover;
@@ -143,8 +143,7 @@
     background-attachment: fixed;
    
   }
- p[data-foo]{
-
+  p[data-foo]{
   color: white;
   opacity: 0.5;
   border-radius:5% ;
@@ -156,6 +155,7 @@
   color: rgb(255, 255, 255);
   font-family: Verdadna, Arial, Helvetica;
   transition-duration: 2s;
+  cursor: default;
    }
 
    p[data-foo]:hover{
@@ -217,7 +217,7 @@
     }
     
     .header-container {
-      background-image: url("../imagenes/foto1.jpg");
+      background-image: url("../imagenes/gpmovil.jpg");
       height: 60%;
       background-size: scale-down;
       background-attachment: fixed;
@@ -231,14 +231,14 @@
     
     }
     .footer-container {
-      background-image: url("../imagenes/15.jfif");
+      background-image: url("../imagenes/foto1.jpg");
       height: 50%;
       background-size: scale-down;
       background-attachment: fixed;
     }
     .footer-container2{
-      background-image: url("../imagenes/132A2450.jpg");
-      filter: blur(3px);
+      background-image: url("../imagenes/132A2533.jpg");
+      filter: blur(1px);
       height: 50%;
       background-size: scale-down;
       position: relative;

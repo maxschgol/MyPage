@@ -23,6 +23,8 @@
     position: relative;
     color: rgb(0, 0, 0);
   }
+
+
   
   
   #menu {
@@ -91,7 +93,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+   
+
   .close {
     position: absolute;
     top: 20px;
