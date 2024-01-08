@@ -13,7 +13,7 @@ body{
   margin: 0 auto;
   position: relative;
   display:flexbox;
-   
+  
 }
 .cont-nav {
   display: flex;
@@ -29,6 +29,7 @@ body{
   display: flex;
   margin-left: auto;
   margin-right: 15%;
+    
 }
 
 .text-nav {
@@ -195,6 +196,19 @@ img{
       filter: drop-shadow(8px 8px 4px rgb(0, 0, 0));
       border-radius: 5px;
       }
+
+   #ultima{
+    cursor: wait;
+  }
+  footer {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 2px;
+    align-items: center;
+    font-size: 1em;
+    position: relative; 
+ }
+
 
 @media (max-width: 800px) { 
 }

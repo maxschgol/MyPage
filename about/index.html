@@ -4,27 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>    <script src="https://kit.fontawesome.com/280efe33b1.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="aboutstyle.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="aboutstyle.css" />
+    <title>Contact</title>
 </head>
 <body>
-    <header> 
-        <div class="conteiner" > 
-                <div class="cont-nav" >
-                    <a href="../principal/index.html"  id="logo"> Photo <br> EmeAX </a>
-
-                    <nav id="menu"> 
-                    <a href="../principal/index.html"> Home</a>
-                    <a href="../porfolio/porfolio.html">Porfolio</a>
-                    <a href="./index.html">About</a>
-                </nav>
-                </div>
-                <div class="contenido">
-    
+   
+    <header>   
+    <div class="conteiner" > 
+        <div class="cont-nav" >
+            <a href="../principal/index.html"  id="logo"> Photo <br> EmeAX </a>
+        <nav id="menu"> 
+            <a href="../principal/index.html" class="text-nav"> Home</a>
+            <a href="../porfolio/porfolio.html" class="text-nav">Porfolio</a>
+            <a href="./index.html" class="text-nav">Contact</a>
+        </nav>
         </div>
+            </div>
             <div class="hamburger">
                 <div class="_layer -top"></div>
                 <div class="_layer -mid"></div>
@@ -32,24 +33,34 @@
             </div>
             <nav class="menuppal">
                 <ul>
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="../porfolio/porfolio.html">Portfolio</a></li>
-                  <li><a href="#">Contact</a></li>
+                  <li><a href="../principal/index.html">Home</a></li>
+                  <li><a href="../porfolio/porfolio.html">Porfolio</a></li>
+                  <li><a href="../about/index.html">Contact</a></li>
                 </ul>
               </nav>
-    
-
-        </header>
-          
-            
+        <div id="text-retrato">
+            <p>Contact</p>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"></script>
-        <footer>
-    <p>&copy; 2023 Maksym Shchyhol. Todos los derechos reservados.</p>
- </footer>
- 
-</body>
+    </header>
+     <div class="redes"> 
+        <a href="https://www.instagram.com/photo_emeax/" target="_blank">
+            <img src="../imagenes/Captura copia.jpg" alt="Instagram">
+            <p> Instagram</p>
+        </a>
+        <a href="mailto:maxschgol@hotmail.com" target="_blank">
+            <img src="../imagenes/Correo Electronico.jpg" alt="Correo">
+            <p>Correo Eletronico</p>
+        </a>
+     </div>
 
-<script src="about.js"></script>
+    <div class="overlay">
+        <span class="close" id="close-button">&times;</span>
+        <img class="overlay-image" src="" alt="Imagen en pantalla completa">
+        <span class="prev" id="prev-button">&#8249;</span> 
+        <span class="next" id="next-button">&#8250;</span> 
+    </div>
+    
+    </div>
+    <script src="about.js"></script>
+</body>
 </html>
